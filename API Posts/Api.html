@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Post</title>
+        <style>
+            #post_container{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                gap: 10px;
+            }
+            .post {
+                padding: 10px;
+                background-color: aqua;
+                border: 10px solid purple;
+                border-radius: 10px;
+            }
+            .post-uid {
+                text-align: center;
+                color: yellow;
+            }  
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1 style="text-align: center">Display My Database</h1>
+        </main>
+
+        <section>
+            <div id="post_container"></div>
+        </section>
+
+        <script src="Api.js"></script>
+    </body>
+</html>
